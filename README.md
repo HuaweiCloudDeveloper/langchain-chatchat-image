@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-- [Repository Introduction](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/main/README.md#repository-introduction)
-- [Prerequisites](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/main/README.md#prerequisites)
-- [Image Description](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/main/README.md#image-description)
-- [Getting Help](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/main/README.md#getting-help)
-- [How to Contribute](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/main/README.md#how-to-contribute)
+- [Repository Introduction](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/master-dev/README.md#repository-introduction)
+- [Prerequisites](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/master-dev/README.md#prerequisites)
+- [Image Description](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/master-dev/README.md#image-description)
+- [Getting Help](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/master-dev/README.md#getting-help)
+- [How to Contribute](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/master-dev/README.md#how-to-contribute)
 
 ## Repository Introduction
 
@@ -39,7 +39,7 @@ The open-source image product Langchain Chatcat Intelligent Dialogue System prov
 
 ## Get Help
 
-- For more questions, you can contact us through [issues](https://github.com/HuaweiCloudDeveloper/apisix-image/issues) or the service support of the specified product in the Huawei Cloud Marketplace.
+- For more questions, you can contact us through [issues](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/issues) or the service support of the specified product in the Huawei Cloud Marketplace.
 - For other open-source images, please refer to [open-source-image-repos](https://github.com/HuaweiCloudDeveloper/open-source-image-repos).
 
 ## How to Contribute
