@@ -4,11 +4,11 @@
 
 
 
-- [仓库简介](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/main/README_ZH.md#项目介绍)
-- [前置条件](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/main/README_ZH.md#前置条件)
-- [镜像说明](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/main/README_ZH.md#镜像说明)
-- [获取帮助](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/main/README_ZH.md#获取帮助)
-- [如何贡献](https://github.com/HuaweiCloudDeveloper/langchian-chatchat-image/blob/main/README_ZH.md#如何贡献)
+- [仓库简介](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/master-dev/README_ZH.md#项目介绍)
+- [前置条件](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/master-dev/README_ZH.md#前置条件)
+- [镜像说明](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/master-dev/README_ZH.md#镜像说明)
+- [获取帮助](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-image/blob/master-dev/README_ZH.md#获取帮助)
+- [如何贡献](https://github.com/HuaweiCloudDeveloper/langchian-chatchat-image/blob/master-dev/README_ZH.md#如何贡献)
 
 ## 项目介绍
 
