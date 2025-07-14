@@ -1,4 +1,4 @@
-#          Langchain Chatcat Intelligent Dialogue System
+#          Langchain Chatchat Intelligent Dialogue System
 
 ## Table of Contents
 
