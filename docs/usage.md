@@ -1,4 +1,4 @@
-# MinIO 使用指南
+# Langchain-Chatchat智能对话系统使用指南
 
 
 
@@ -6,21 +6,21 @@
 
 
 
-[MinIO-分布式对象存储系统](https://marketplace.huaweicloud.com/hidden/contents/be9aa1a6-4d97-445f-8bbe-2e1b1bf3db64#productid=OFFI1138677857956487168)
+[Langchain-Chatchat智能对话系统使用指南]((https://marketplace.huaweicloud.com/contents/1ff9aa69-614a-461d-96e8-76d544a2577c#productid=OFFI1127508967462903808))
 
 # 商品说明
 
 
 
-‌TiDB MinIO 是一款 高性能、开源、云原生的分布式对象存储系统，兼容 Amazon S3 API，适用于大规模数据存储、备份、分析和 AI/ML 工作负载。它采用 Golang 编写，轻量级且易于部署，适合私有云、公有云和边缘计算环境。
+Langchain-Chatchat是一个开源的大模型应用平台，旨在帮助用户快速构建、部署并管理自己的大语言模型应用。无论是企业内部的智能助手，还是个人的知识问答系统，都提供了一个简便的解决方案，支持高效的文档检索和多轮对话，提升工作效率。
+本商品通过鲲鹏服务器+EulerOS2.0进行安装部署
 
-本商品通过 鲲鹏服务器 + Huawei Cloud EulerOS 2.0 64bit 进行安装部署。
 
 # 商品购买
 
 
 
-您可以在云商店搜索 **minio**。
+您可以在云商店搜索 **Langchain-Chatchat智能对话系统**。
 
 其中，地域、规格、推荐配置使用默认，购买方式根据您的需求选择按需/按月/按年，短期使用推荐按需，长期使用推荐按月/按年，确认配置后点击“立即购买”。
 
@@ -42,7 +42,7 @@
 
 > **安全组规则的配置如下：**
 >
-> - 入方向规则放通端口 `9001`，**源地址内必须包含您的客户端 ip**，否则无法访问
+> - 入方向规则放通端口chatchat的端口8501 7861，xinference的端口9997，必须包含这些端口才能正常访问使用
 > - 入方向规则放通 CloudShell 连接实例使用的端口 `22`，以便在控制台登录调试
 > - 出方向规则一键放通
 
@@ -70,18 +70,36 @@
 
 
 
-## MinIO 使用
+## Langchain-Chatchat使用
+使用xinference拉取模型
+启动xinference
+xinference-local --host 0.0.0.0 --port 9997
+拉取模型
+使用网址公网ip+9997进入xinference网页，拉取自己需要的vllm、Embedding等模型。
+  
+使用modelscope的方式下载自己需要的模型。
 
+修改模型配置文件启动Langchain-Chatchat
+修改配置文件并初始化
+cd /root/chatchat_data目录下，vim model_setting.yaml
+修改支持的大模型模型和xinference的模型
+  
+chatchat init 初始化
+启动Langchain-chatchat
+cd /home/Langchain-chatchat/docker
+docker compose up -d
+然后使用公网ip+8501打开网页
+上传文档进行知识问答
+自建知识库上传文档
+   
+自建一个知识库上传自己的文档，然后添加文件到知识库。
+进行RAG对话
+    
+选择大模型和知识库来进行RAG对话。
 
-
-### 控制台访问地址
-
-
-
-http://<服务器IP>:9001（默认凭据: myminioadmin / minio-secret-key-change-me） [![img](https://github.com/HuaweiCloudDeveloper/minio-image/raw/MinIO20250422221226.0.0-1-arm-v1.0/docs/images/img4.png)](https://github.com/HuaweiCloudDeveloper/minio-image/blob/MinIO20250422221226.0.0-1-arm-v1.0/docs/images/img4.png) [![img](https://github.com/HuaweiCloudDeveloper/minio-image/raw/MinIO20250422221226.0.0-1-arm-v1.0/docs/images/img5.png)](https://github.com/HuaweiCloudDeveloper/minio-image/blob/MinIO20250422221226.0.0-1-arm-v1.0/docs/images/img5.png)
 
 ### 参考文档
 
 
 
-[MinIO官网](https://min.io/)
+[Langchain-Chatchat官网](https://github.com/chatchat-space/Langchain-Chatchat)
