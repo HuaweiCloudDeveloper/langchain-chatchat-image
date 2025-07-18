@@ -1,45 +1,61 @@
-# EulerOS2.0部署langchain-chatchat
+# Langchain-Chatchat部署指南
+
+
+
+## ‌一、环境准备
+
+
+
+### 更新系统
+
+
+
+#### EulerOS2.0
+
+
+
+```
+yum -y update  
+yum -y upgrade
+```
+
+
+
+#### Ubuntu 24.04
+
+
+
+```
+apt-get -y update
+export DEBIAN_FRONTEND=noninteractive
+apt-get -y -o Dpkg::Options::="--force-confold" dist-upgrade
+```
+
+
+
+## ‌二、安装docker
+
+
+
+#### EulerOS2.0
+
+
+
+参考：[安装Docker](https://support.huaweicloud.com/bestpractice-hce/hce_bp_0002.html)
+
+#### Ubuntu 24.04
+
+
+
+参考：[安装Docker](https://www.runoob.com/docker/ubuntu-docker-install.html)
 
  
 
-# **安装必要的软件**
 
-## **1.安装docker**
 
-如果之前安装过docker，要先删掉之后再安装依赖
+## **三、安装conda**
 
-sudo dnf remove docker docker-ce-cli docker-selinux docker-engine
-
-下载repo文件
-
-wget -O /etc/yum.repos.d/docker-ce.repo https://mirrors.huaweicloud.com/docker-ce/linux/centos/docker-ce.repo
-
-sudo sed -i 's+download.docker.com+mirrors.huaweicloud.com/docker-ce+' /etc/yum.repos.d/docker-ce.repo
-
-sudo sed -i 's+$releasever+9.9+' /etc/yum.repos.d/docker-ce.repo
-
-安装新版本
-
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
-设置开机启动
-
-sudo systemctl enable --now docker
-
-配置镜像加速器
-
-vi /etc/docker/daemon.json
-
-\# 粘贴以下配置,保存退出,镜像地址可替换成自己在华为云申请的镜像加速器地址{
-
-  "registry-mirrors": [ 自己申请的镜像加速地址]}
-
-重启docker
-
-systemctl restart docker
-
-## **2.安装conda**
-
+```
 mkdir -p ~/miniconda3
 
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda3/miniconda.sh
@@ -51,40 +67,53 @@ rm -f ~/miniconda3/miniconda.sh
 source ~/miniconda3/bin/activate
 
 conda init --all
+```
 
 创建虚拟环境
 
+```
 conda create -n chat python=3.9
+```
 
  
 
-# **源码下载**
+# **四、源码下载**
 
 ## **1.下载langchain-chatchat的源码**
 
 创建xinference缓存路径
 
+```
 mkdir -p ~/xinference
+```
 
  
 
-下载源码 git clone https://github.com/chatchat-space/Langchain-Chatchat.git
+下载源码 
+
+```
+git clone https://github.com/chatchat-space/Langchain-Chatchat.git
+```
 
  
 
 安装必要的包
 
+```
 pip install langchain-chatchat -U -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 pip install "langchain-chatchat[xinference]" -U #安装推理组件xinference
+```
 
  
 
 ## **2.初始化项目配置和数据目录**
 
+```
 export CHATCHAT_ROOT=/root/chatchat_data
 
 chatchat init
+```
 
 然后在这个目录下就会有相对应的配置文件。
 
@@ -94,7 +123,7 @@ model_setting.yaml是模型配置文件，后续需要进行修改。
 
  
 
-# **启动项目**
+# **五、启动项目**
 
 ## **1.修改配置文件**
 
@@ -102,7 +131,13 @@ model_setting.yaml是模型配置文件，后续需要进行修改。
 
 ### ***\*（1）启动模型\****
 
-首先是使用 xinference-local --host 0.0.0.0 --port 9997启动xinference，成功启动后，使用ip+9997来打开页面。
+首先是使用 
+
+```
+xinference-local --host 0.0.0.0 --port 9997
+```
+
+启动xinference，成功启动后，使用ip+9997来打开页面。
 
 ![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps2.jpg) 
 
@@ -190,13 +225,17 @@ model_setting.yaml是模型配置文件，后续需要进行修改。
 
 修改好配置后，需要初始化一下，以保证修改生效。
 
+```
 export CHATCHAT_ROOT=/root/chatchat_data
 
 chatchat init
+```
 
 之后就可以启动docker了
 
+```
 docker-compose up -d
+```
 
 启动成功后的输出为：
 
@@ -286,30 +325,4 @@ docker-compose up -d
 
  
 
-![img](images/img_5.png) 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-## **2.知识库问答**
-
-使用RAG对话进行问答，选择合适的知识库和模型。
-
-![img](images/img_6.png) 
+![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps12.jpg) 
