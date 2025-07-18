@@ -84,7 +84,9 @@ xinference-local --host 0.0.0.0 --port 9997
 
 使用网址公网ip+9997进入xinference网页，拉取自己需要的vllm、Embedding等模型。
 
-![img.png](images/img_1.png) ![img.png](images/img_2.png)
+![img.png](images/img_1.png) 
+
+![img.png](images/img_2.png)
 
 使用modelscope的方式下载自己需要的模型。
 
