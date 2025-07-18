@@ -86,6 +86,7 @@ xinference-local --host 0.0.0.0 --port 9997
 修改配置文件并初始化
 cd /root/chatchat_data目录下，vim model_setting.yaml
 修改支持的大模型模型和xinference的模型
+
 ![img.png](images/img_3.png) ![img.png](images/img_4.png)
 
 chatchat init 初始化
