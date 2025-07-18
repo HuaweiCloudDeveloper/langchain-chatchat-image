@@ -117,7 +117,7 @@ chatchat init
 
 然后在这个目录下就会有相对应的配置文件。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps1.jpg) 
+![img](images/img_1.png) 
 
 model_setting.yaml是模型配置文件，后续需要进行修改。
 
@@ -139,7 +139,7 @@ xinference-local --host 0.0.0.0 --port 9997
 
 启动xinference，成功启动后，使用ip+9997来打开页面。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps2.jpg) 
+![img](images/img_2.png) 
 
  
 
@@ -167,7 +167,7 @@ xinference-local --host 0.0.0.0 --port 9997
 
 打开这个页面后，就可以拉取模型来使用了，xinference里面包含的模型可以直接点击下载使用，不包含的需要先使用modelscope下载，然后再注册到xinference以便后续使用。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps3.jpg)![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps4.jpg) 
+![img](images/img_3.png)![img](images/img_4.png) 
 
  
 
@@ -193,13 +193,13 @@ xinference-local --host 0.0.0.0 --port 9997
 
 修改/root/chatchat_data目录下model_settings.yaml,让拉取的模型添加到model的配置文件，可以把需要的模型都添加进行然后再到xinference拉取模型。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps5.jpg)![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps6.jpg) 
+![img](images/img_5.png)![img](images/img_6.png) 
 
 需要修改的是两个地方，第一是支持的Agent模型把需要使用的添加进去，然后再到xinference部分添加上。
 
 ### ***\*（3）修改docker配置文件\****
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps7.jpg) 
+![img](images/img_7.png) 
 
  
 
@@ -239,7 +239,7 @@ docker-compose up -d
 
 启动成功后的输出为：
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps8.jpg) 
+![img](images/img_8.png) 
 
  
 
@@ -249,7 +249,7 @@ docker-compose up -d
 
  
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps9.jpg) 
+![img](images/img_9.png) 
 
  
 
@@ -275,7 +275,7 @@ docker-compose up -d
 
 部署成功后会有一些默认的模型可以使用，这个是在部署之前的一些配置文件中就设定好的，但是只能选择已经下载获取的模型进行使用。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps10.jpg) 
+![img](images/img_10.png) 
 
  
 
@@ -301,7 +301,7 @@ docker-compose up -d
 
 自定义名称和选择合适的向量库和词嵌入模型来创建新的知识库。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps11.jpg) 
+![img](images/img_11.png) 
 
  
 
@@ -325,4 +325,4 @@ docker-compose up -d
 
  
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps12.jpg) 
+![img](images/img_12.png) 
