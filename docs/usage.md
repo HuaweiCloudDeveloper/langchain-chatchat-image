@@ -6,7 +6,7 @@
 
 
 
-[Langchain-Chatchat智能对话系统]((https://marketplace.huaweicloud.com/contents/1ff9aa69-614a-461d-96e8-76d544a2577c#productid=OFFI1127508967462903808))
+[Langchain-Chatchat智能对话系统](https://marketplace.huaweicloud.com/contents/1ff9aa69-614a-461d-96e8-76d544a2577c#productid=OFFI1127508967462903808)
 
 # 二、商品说明
 
