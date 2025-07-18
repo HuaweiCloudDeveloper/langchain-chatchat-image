@@ -237,7 +237,6 @@ chatchat init
 docker-compose up -d
 ```
 
-启动成功后的输出为：
 
 ![img](images/img_8.png) 
 
@@ -247,15 +246,11 @@ docker-compose up -d
 
 然后使用ip+8501打开网页
 
- 
 
-![img](images/img_9.png) 
 
- 
+![img](images/img_8.png) 
 
- 
 
- 
 
  
 
@@ -275,17 +270,13 @@ docker-compose up -d
 
 部署成功后会有一些默认的模型可以使用，这个是在部署之前的一些配置文件中就设定好的，但是只能选择已经下载获取的模型进行使用。
 
-![img](images/img_10.png) 
 
+![img](images/img_9.png) 
  
 
  
 
- 
 
- 
-
- 
 
  
 
@@ -301,28 +292,21 @@ docker-compose up -d
 
 自定义名称和选择合适的向量库和词嵌入模型来创建新的知识库。
 
-![img](images/img_11.png) 
+
+![img](images/img_10.png) 
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  
 
 创建完成后就可以上传文档了
 
+![img](images/img_11.png) 
+
+## **2.知识库回答**
+
+使用RAG对话进行问答，选择合适的知识库和模型。
  
 
 ![img](images/img_12.png) 
