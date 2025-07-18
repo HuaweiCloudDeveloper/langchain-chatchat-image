@@ -286,7 +286,7 @@ docker-compose up -d
 
  
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps12.jpg) 
+![img](images/img_5.png) 
 
  
 
@@ -312,4 +312,4 @@ docker-compose up -d
 
 使用RAG对话进行问答，选择合适的知识库和模型。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml7436\wps13.jpg) 
+![img](images/img_6.png) 
