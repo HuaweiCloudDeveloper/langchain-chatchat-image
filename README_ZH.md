@@ -38,7 +38,7 @@
 
    | 镜像规格                                                     | 特性说明                                                 | 备注 |
    | ------------------------------------------------------------ | -------------------------------------------------------- | ---- |
-   | [Langchain-chatchat-0.3.1.3-kunpeng](https://github.com/HuaweiCloudDeveloper/langchain-chatchat-0.3.1.3-image/tree/Langchain-chatchat-kunpeng) | 基于鲲鹏服务器 + Huawei Cloud EulerOS 2.0 64bit 安装部署 |      |
+   | [Langchain-chatchat-0.3.1.3-kunpeng](https://github.com/HuaweiCloudDeveloper/Langchain-chatchat-0.3.1.3-image/tree/Langchain-chatchat-kunpeng) | 基于鲲鹏服务器 + Huawei Cloud EulerOS 2.0 64bit 安装部署 |      |
 
    ## 获取帮助
 
